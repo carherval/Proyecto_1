@@ -1,0 +1,38 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Variables */
+:root {
+  --orange-color: #ff5f04;
+  --purple-color: #170453;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  font-size: 12px;
+}
+
+/* Estilos iniciales generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: var(--black-color);
+  background-color: var(--purple-color);
+}
+
+/* Estilos responsive iniciales */
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  justify-items: center;
+}
+
+.container {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
