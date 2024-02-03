@@ -1,11 +1,1327 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-ES">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="keywords"
+      content="Palabras clave de la página Home de PcComponentes.com"
+    />
+    <meta
+      name="description"
+      content="Informática, electrónica, tecnología al mejor precio, calidad y servicio. PcComponentes es tu tienda online líder de móviles, ordenadores, tablets y mucho más."
+    />
+    <link rel="canonical" href="https://www.pccomponentes.com/" />
+    <link rel="stylesheet" href="styles_pc-comp.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.pccomponentes.com/img/favicons/favicon.png"
+      type="image/x-icon"
+    />
     <title>Pc-Componentes</title>
   </head>
-  <body></body>
+  <body>
+    <h1 class="oculto">Pc-Componentes</h1>
+    <header>
+      <div class="fix">
+        <div class="flex container cabecera">
+          <a
+            href="https://www.pccomponentes.com/"
+            title="PcComponentes"
+            rel="noopener"
+            ><img
+              src="https://cdn.pccomponentes.com/img/logos/logo-pccomponentes.svg"
+              alt="PcComponentes"
+          /></a>
+          <form action="#" method="post">
+            <fieldset class="flex container">
+              <legend class="oculto">Buscador cabecera</legend>
+              <label class="oculto" for="categorias"
+                >Seleccione una categoría</label
+              >
+              <select name="categorias" id="categorias">
+                <option value="todas" selected>Todas las categorías</option>
+                <option value="reacondicionados">Reacondicionados</option>
+              </select>
+              <label class="oculto" for="buscador"
+                >Introduzca un concepto de búsqueda</label
+              >
+              <div class="flex container buscador">
+                <input
+                  type="text"
+                  name="buscador"
+                  id="buscador"
+                  placeholder="Buscar"
+                />
+                <input
+                  class="lupa"
+                  type="image"
+                  src="assets/images/lupa.png"
+                  alt="Buscar"
+                  title="Buscar"
+                />
+              </div>
+            </fieldset>
+          </form>
+          <nav>
+            <ul class="flex container menu-cabecera">
+              <li class="compromisos before">
+                <a
+                  href="https://www.pccomponentes.com/compromisos"
+                  title="Compromisos PcComponentes"
+                  rel="noopener"
+                  >Compromisos</a
+                >
+              </li>
+              <li class="login before">
+                <a
+                  href="https://www.pccomponentes.com/login"
+                  title="Mi cuenta PcComponentes"
+                  rel="noopener"
+                  >Mi cuenta</a
+                >
+              </li>
+              <li class="carrito before">
+                <a href="#" title="Mi cesta PcComponentes">Mi cesta</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu-categorias">
+          <ul class="flex container">
+            <li class="hamburguesa before">
+              <a href="#" title="Todas las categorías">Todas las categorías</a>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/ofertas-de-enero"
+                title="Ofertas de Enero"
+                rel="noopener"
+                >Ofertas de Enero</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mensaje-cabecera">
+        <p><span>Expertos en tecnología</span> con un servicio 5 estrellas</p>
+      </div>
+      <div class="banner">
+        <ul>
+          <li>
+            <a
+              href="https://www.pccomponentes.com/ofertas-de-enero"
+              title="Ofertas de enero"
+              rel="noopener"
+              ><img
+                src="https://img.pccomponentes.com/pcblog/1705359600000/1560x349-header-slide-home-desktop.jpg"
+                alt="Ofertas de enero"
+            /></a>
+          </li>
+          <li class="oculto">
+            <a
+              href="https://www.pccomponentes.com/especial-ocio-en-casa"
+              title="Estrena televisor"
+              rel="noopener"
+              ><img
+                src="https://img.pccomponentes.com/pcblog/1705273200000/1560x349.jpg"
+                alt="Estrena televisor"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <nav>
+        <ul class="flex container botonera">
+          <li>
+            <a
+              href="https://www.pccomponentes.com/ofertas-de-enero/portatiles/sobremesa"
+              title="Ofertas en portátiles"
+              rel="noopener"
+              ><img
+                src="https://img.pccomponentes.com/pcblog/1705446000000/500x500-portatiles.jpg"
+                alt="Ofertas en portátiles"
+            /></a>
+            <div>Los mejores precios en portátiles y ordenadores</div>
+          </li>
+          <li>
+            <a
+              href="https://www.pccomponentes.com/ofertas-de-enero?tag=componentes"
+              title="Ofertas en componentes"
+              rel="noopener"
+              ><img
+                src="https://img.pccomponentes.com/pcblog/1704841200000/500x500-componentes.jpg"
+                alt="Ofertas en componentes"
+            /></a>
+            <div>Grandes ofertas para actualizar tu equipo</div>
+          </li>
+          <li>
+            <a
+              href="https://www.pccomponentes.com/ofertas-de-enero/accesorios-gaming/auriculares/microfonos/monitores-pc/ratones/teclados/webcam"
+              title="Ofertas en periféricos"
+              rel="noopener"
+              ><img
+                src="https://img.pccomponentes.com/pcblog/1704841200000/500x500-perife-ricos.jpg"
+                alt="Ofertas en periféricos"
+            /></a>
+            <div>Descubre los periféricos al mejor precio</div>
+          </li>
+          <li>
+            <a
+              href="https://www.pccomponentes.com/ofertas-de-enero?tag=smartphones-y-tablets"
+              title="Ofertas en smartphones y tablets"
+              rel="noopener"
+              ><img
+                src="https://img.pccomponentes.com/pcblog/1704841200000/500x500-tablets-v2.jpeg"
+                alt="Ofertas en smartphones y tablets"
+            /></a>
+            <div>Nuestros recomendados para estar conectados</div>
+          </li>
+          <li>
+            <a
+              href="https://www.pccomponentes.com/ofertas-de-enero?tag=tv-y-audio"
+              title="Ofertas en TV y audio"
+              rel="noopener"
+              ><img
+                src="https://img.pccomponentes.com/pcblog/1704841200000/500x500-tv-audio.jpeg"
+                alt="Ofertas en TV y audio"
+            /></a>
+            <div>Lleva el cine a tu salón</div>
+          </li>
+          <li>
+            <a
+              href="https://www.pccomponentes.com/ofertas-de-enero/cafeteras/freidoras/microondas/robot-aspiradoras/aspiradoras/frigorificos/lavadoras/radiadores-electricos/afeitadoras"
+              title="Ofertas en hogar"
+              rel="noopener"
+              ><img
+                src="https://img.pccomponentes.com/pcblog/1704841200000/500x500-hogar.jpeg"
+                alt="Ofertas en hogar"
+            /></a>
+            <div>Lo más buscado para un hogar tech</div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <nav>
+          <ul class="flex container servicios">
+            <li>
+              <a
+                href="https://www.pccomponentes.com/ofertas-especiales"
+                title="Ofertas Especiales"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1704927600000/ofertas-especiales-v2.png"
+                  alt="Ofertas Especiales"
+                />
+                <div>Ofertas Especiales</div></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/novedades"
+                title="Lanzamientos y novedades"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1705618800000/group-2.png"
+                  alt="Lanzamientos y novedades"
+                />
+                <div>Lanzamientos y novedades</div></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/pccom"
+                title="Ordenadores PcCom"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1704409200000/ordenadores-ccom-02.png"
+                  alt="Ordenadores PcCom"
+                />
+                <div>Ordenadores PcCom</div></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/promociones"
+                title="Promociones"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1704409200000/promociones.png"
+                  alt="Promociones"
+                />
+                <div>Promociones</div></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/reacondicionados"
+                title="Reacondicionados"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1704927600000/reacondicionados.png"
+                  alt="Reacondicionados"
+                />
+                <div>Reacondicionados</div></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/servicios"
+                title="Servicios"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1704409200000/servicios.png"
+                  alt="Servicios"
+                />
+                <div>Servicios</div></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/concursos-pccomponentes"
+                title="Sorteos y concursos"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1704409200000/sorteos-y-concursos.png"
+                  alt="Sorteos y concursos"
+                />
+                <div>Sorteos y concursos</div></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/blog"
+                title="Blog"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1704409200000/blog.png"
+                  alt="Blog"
+                />
+                <div>Blog</div></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/ranking-de-usuarios"
+                title="Ranking de Usuarios"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1704409200000/ranking-de-usuarios.png"
+                  alt="Ranking de Usuarios"
+                />
+                <div>Ranking de Usuarios</div></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="replay">
+        <a
+          href="https://www.pccomponentes.com/reacondicionados"
+          title="Replay"
+          rel="noopener"
+          ><img
+            src="https://cdn.pccomponentes.com/img/repositorio/banner/dfp-pccomponentes-replay-default-1560x160.png"
+            alt="Replay"
+          />
+        </a>
+      </section>
+      <section>
+        <h2>Nuestros productos más vendidos</h2>
+        <ul class="flex container vendidos">
+          <li>
+            <a
+              class="flex container producto"
+              href="#"
+              title="MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6"
+            >
+              <img
+                src="https://thumb.pccomponentes.com/w-300-300/articles/35/357848/1157-msi-geforce-rtx-3060-ventus-2x-oc-12gb-gddr6.jpg"
+                alt="MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6"
+              />
+              <span>MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6</span>
+              <span class="flex container recomendamos">Te recomendamos</span>
+              <span class="info-recomendamos"
+                >Producto recomendado por nuestros expertos, con la garantía de
+                tu tienda online experta en tecnología con un servicio 5
+                estrellas.</span
+              >
+              <span class="flex container trending">Trending</span>
+              <span class="info-trending"
+                >Con esta etiqueta seleccionamos los productos que actualmente
+                son tendencia, pero asegurando la mejor calidad y
+                disponibilidad.</span
+              >
+              <span class="precio">309,91 €</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex container producto"
+              href="#"
+              title="MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6"
+            >
+              <img
+                src="https://thumb.pccomponentes.com/w-300-300/articles/35/357848/1157-msi-geforce-rtx-3060-ventus-2x-oc-12gb-gddr6.jpg"
+                alt="MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6"
+              />
+              <span>MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6</span>
+              <span class="flex container recomendamos">Te recomendamos</span>
+              <span class="info-recomendamos"
+                >Producto recomendado por nuestros expertos, con la garantía de
+                tu tienda online experta en tecnología con un servicio 5
+                estrellas.</span
+              >
+              <span class="flex container trending">Trending</span>
+              <span class="info-trending"
+                >Con esta etiqueta seleccionamos los productos que actualmente
+                son tendencia, pero asegurando la mejor calidad y
+                disponibilidad.</span
+              >
+              <span class="precio">309,91 €</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex container producto"
+              href="#"
+              title="MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6"
+            >
+              <img
+                src="https://thumb.pccomponentes.com/w-300-300/articles/35/357848/1157-msi-geforce-rtx-3060-ventus-2x-oc-12gb-gddr6.jpg"
+                alt="MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6"
+              />
+              <span>MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6</span>
+              <span class="flex container recomendamos">Te recomendamos</span>
+              <span class="info-recomendamos"
+                >Producto recomendado por nuestros expertos, con la garantía de
+                tu tienda online experta en tecnología con un servicio 5
+                estrellas.</span
+              >
+              <span class="flex container trending">Trending</span>
+              <span class="info-trending"
+                >Con esta etiqueta seleccionamos los productos que actualmente
+                son tendencia, pero asegurando la mejor calidad y
+                disponibilidad.</span
+              >
+              <span class="precio">309,91 €</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex container producto"
+              href="#"
+              title="MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6"
+            >
+              <img
+                src="https://thumb.pccomponentes.com/w-300-300/articles/35/357848/1157-msi-geforce-rtx-3060-ventus-2x-oc-12gb-gddr6.jpg"
+                alt="MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6"
+              />
+              <span>MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6</span>
+              <span class="flex container recomendamos">Te recomendamos</span>
+              <span class="info-recomendamos"
+                >Producto recomendado por nuestros expertos, con la garantía de
+                tu tienda online experta en tecnología con un servicio 5
+                estrellas.</span
+              >
+              <span class="flex container trending">Trending</span>
+              <span class="info-trending"
+                >Con esta etiqueta seleccionamos los productos que actualmente
+                son tendencia, pero asegurando la mejor calidad y
+                disponibilidad.</span
+              >
+              <span class="precio">309,91 €</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex container producto"
+              href="#"
+              title="MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6"
+            >
+              <img
+                src="https://thumb.pccomponentes.com/w-300-300/articles/35/357848/1157-msi-geforce-rtx-3060-ventus-2x-oc-12gb-gddr6.jpg"
+                alt="MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6"
+              />
+              <span>MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6</span>
+              <span class="flex container recomendamos">Te recomendamos</span>
+              <span class="info-recomendamos"
+                >Producto recomendado por nuestros expertos, con la garantía de
+                tu tienda online experta en tecnología con un servicio 5
+                estrellas.</span
+              >
+              <span class="flex container trending">Trending</span>
+              <span class="info-trending"
+                >Con esta etiqueta seleccionamos los productos que actualmente
+                son tendencia, pero asegurando la mejor calidad y
+                disponibilidad.</span
+              >
+              <span class="precio">309,91 €</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex container producto"
+              href="#"
+              title="MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6"
+            >
+              <img
+                src="https://thumb.pccomponentes.com/w-300-300/articles/35/357848/1157-msi-geforce-rtx-3060-ventus-2x-oc-12gb-gddr6.jpg"
+                alt="MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6"
+              />
+              <span>MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6</span>
+              <span class="flex container recomendamos">Te recomendamos</span>
+              <span class="info-recomendamos"
+                >Producto recomendado por nuestros expertos, con la garantía de
+                tu tienda online experta en tecnología con un servicio 5
+                estrellas.</span
+              >
+              <span class="flex container trending">Trending</span>
+              <span class="info-trending"
+                >Con esta etiqueta seleccionamos los productos que actualmente
+                son tendencia, pero asegurando la mejor calidad y
+                disponibilidad.</span
+              >
+              <span class="precio">309,91 €</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="tecnologia">
+        <h2>Tecnología que se adapta a tu estilo de vida</h2>
+        <p>
+          Nuestros expertos han seleccionado los mejores productos para que
+          puedas disfrutar más en tu día a día
+        </p>
+        <nav>
+          <ul class="flex container expertos">
+            <li>
+              <a
+                href="https://www.pccomponentes.com/gaming"
+                title="Gamers"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1705532400000/500x500-gaming-aspiracional.jpg"
+                  alt="Gamers"
+              /></a>
+              <div>Pasión por el gaming</div>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/oficina-y-teletrabajo"
+                title="Oficina y teletrabajo"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1705532400000/500x500-oficina-aspiracional.jpg"
+                  alt="Oficina y teletrabajo"
+              /></a>
+              <div>Productividad y teletrabajo</div>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/tecnologia-para-estudiantes"
+                title="Estudiantes"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1705532400000/500x500-tecnologi-a-estudiantes-aspiracional.jpg"
+                  alt="Estudiantes"
+              /></a>
+              <div>Esenciales para estudiantes</div>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/especial-streaming"
+                title="Creadores de contenido"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1705532400000/500x500-streaming-aspiracional.jpg"
+                  alt="Creadores de contenido"
+              /></a>
+              <div>Creadores de contenido</div>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/especial-ocio-en-casa"
+                title="TV y audio"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1705532400000/500x500-ocio-en-casa-aspiracional.jpg"
+                  alt="TV y audio"
+              /></a>
+              <div>Disfruta del cine en casa</div>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <h2>Categorías en tendencia</h2>
+        <nav>
+          <ul class="flex container categorias">
+            <li>
+              <a
+                href="https://www.pccomponentes.com/portatiles"
+                title="Portátiles"
+                rel="noopener"
+                ><img
+                  src="https://cdn.pccomponentes.com/img/repositorio/maincategoryid/id-fam-1115.jpg?2"
+                  alt="Portátiles"
+              /></a>
+              <div>Portátiles</div>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/sobremesa"
+                title="Sobremesa"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1671404400000/familia-pccom-500x500.jpg"
+                  alt="Sobremesa"
+              /></a>
+              <div>Sobremesa</div>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/smartphone-moviles"
+                title="Smartphones"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1679439600000/familia-smartphones-500x500.png"
+                  alt="Smartphones"
+              /></a>
+              <div>Smartphones</div>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/auriculares"
+                title="Auriculares"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1678834800000/auriculares500x500.png"
+                  alt="Auriculares"
+              /></a>
+              <div>Auriculares</div>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/televisores"
+                title="Televisores"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1673564400000/familia-televisores-500x500-producto.jpg"
+                  alt="Televisores"
+              /></a>
+              <div>Televisores</div>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/monitores"
+                title="Monitores"
+                rel="noopener"
+                ><img
+                  src="https://cdn.pccomponentes.com/img/repositorio/maincategoryid/id-fam-13.jpg?3"
+                  alt="Monitores"
+              /></a>
+              <div>Monitores</div>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <nav>
+          <ul class="flex container carrusel-marcas">
+            <li>
+              <a
+                href="https://www.pccomponentes.com/samsung"
+                title="Samsung"
+                rel="noopener"
+                ><img
+                  src="https://cdn.pccomponentes.com/img/repositorio/home/image-8.webp"
+                  alt="Samsung"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/espacio-intel"
+                title="Intel"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1666648800000/frame-10867-1.png"
+                  alt="Intel"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/chromebook-es-mas-que-un-portatil"
+                title="Chromebook"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1666648800000/chromebook-lockup-color-web-1-1.png"
+                  alt="Chromebook"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/brand-corner-logitech"
+                title="Logitech"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1676329200000/logitech-logo.png"
+                  alt="Logitech"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/asus"
+                title="Asus"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1674169200000/logos-partners-asus-1-2.png"
+                  alt="Asus"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/espacio-windows-11"
+                title="Windows 11"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1678748400000/windows11.png"
+                  alt="Windows 11"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <h2>Descubre nuestras marcas</h2>
+        <nav>
+          <ul class="flex container marcas">
+            <li>
+              <a
+                href="https://www.pccomponentes.com/pccom"
+                title="PcCom"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1667170800000/br-pccom.jpg"
+                  alt="PcCom"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/forgeon-store"
+                title="Forgeon"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1667170800000/br-forgeon-1.jpg"
+                  alt="Forgeon"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/tempest-store"
+                title="Tempest"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1667170800000/br-tempest-1.jpg"
+                  alt="Tempest"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/owlotech-store"
+                title="Owlotech"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1667170800000/br-owlotech.jpg"
+                  alt="Owlotech"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/alurin-store"
+                title="Alurin"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1704841200000/br-alurin-02.jpg"
+                  alt="Alurin"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/nilait-store"
+                title="Nilait"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1695074400000/br-nilait-2.jpg"
+                  alt="Nilait"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/origial-store"
+                title="Origial"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1667170800000/br-origial.jpg"
+                  alt="Origial"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/pccom-essential-store"
+                title="PcCom Essential"
+                rel="noopener"
+                ><img
+                  src="https://img.pccomponentes.com/pcblog/1695852000000/br-pccom-essential.jpg"
+                  alt="PcCom Essential"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <h2>Compromisos con el cliente</h2>
+        <nav>
+          <ul class="flex container cliente">
+            <li>
+              <a
+                href="https://www.pccomponentes.com/quienes-somos"
+                title="Quiénes somos"
+                rel="noopener"
+                ><img
+                  src="https://cdn.pccomponentes.com/img/repositorio/home/opcion-01-quienes-grey-min.webp"
+                  alt="Quiénes somos"
+              /></a>
+              <div>Quiénes somos</div>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/compromisos"
+                title="Nuestros compromisos"
+                rel="noopener"
+                ><img
+                  src="https://cdn.pccomponentes.com/img/repositorio/home/opcion-01-compromisos-grey-min.webp"
+                  alt="Nuestros compromisos"
+              /></a>
+              <div>Nuestros compromisos</div>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/opiniones"
+                title="Opina sobre nosotros"
+                rel="noopener"
+                ><img
+                  src="https://cdn.pccomponentes.com/img/repositorio/home/opcion-01-nosotros-grey-min.webp"
+                  alt="Opina sobre nosotros"
+              /></a>
+              <div>Opina sobre nosotros</div>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/servicios"
+                title="Nuestros servicios"
+                rel="noopener"
+                ><img
+                  src="https://cdn.pccomponentes.com/img/repositorio/home/opcion-01-servicios-grey-min.webp"
+                  alt="Nuestros servicios"
+              /></a>
+              <div>Nuestros servicios</div>
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/blog/categoria-sala-de-prensa"
+                title="Sala de prensa"
+                rel="noopener"
+                ><img
+                  src="https://cdn.pccomponentes.com/img/repositorio/home/opcion-01-prensa-grey-min.webp"
+                  alt="Sala de prensa"
+              /></a>
+              <div>Sala de prensa</div>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <h2>En nuestro blog</h2>
+        <ul class="flex container blog">
+          <li>
+            <a
+              href="https://www.pccomponentes.com/mejores-pantallas-led-oled-amoled-lcd-diferencias"
+              title="Tipos de paneles y tecnología de pantallas"
+              rel="noopener"
+              ><div>
+                <h3>
+                  Diferencias entre pantallas OLED, AMOLED, QLED y NanoCell:
+                  ¿cuál es mejor?
+                </h3>
+              </div>
+              <img
+                src="https://img.pccomponentes.com/pcblog/24/tipos-de-pantallas.jpg"
+                alt="Tipos de paneles y tecnología de pantallas"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.pccomponentes.com/configurar-kodi-smart-tv"
+              title="Configurar e instalar Kodi en tu TV"
+              rel="noopener"
+              ><div>
+                <h3>Configurar e Instalar Kodi: elige los mejores add-ons</h3>
+              </div>
+              <img
+                src="https://img.pccomponentes.com/pcblog/41/configurar-kodi.jpg"
+                alt="Configurar e instalar Kodi en tu TV"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.pccomponentes.com/diferencias-tipos-switch-teclado"
+              title="Diferencias y tipos de switch de teclado mecánico"
+              rel="noopener"
+              ><div>
+                <h3>
+                  Diferencias y tipos de switch de teclado mecánico: ¿Cuál es
+                  mejor para ti?
+                </h3>
+              </div>
+              <img
+                src="https://img.pccomponentes.com/pcblog/385/tecladoswitchblue.jpg"
+                alt="Diferencias y tipos de switch de teclado mecánico"
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="info-pie">
+        <h2>PcComponentes es tu tienda online de tecnología e informática</h2>
+        <p>
+          Somos la <span>tienda online líder en tecnología</span>, basada en la
+          confianza, la experiencia de compra y el conocimiento del sector
+          tecnológico. Desde 2005 somos <span>expertos</span> en informática y
+          electrónica. Buscamos innovar, descubrir y responder día a día a las
+          últimas necesidades de la comunidad más tecnológica siendo el cliente
+          nuestra razón de ser, superando siempre sus expectativas.
+        </p>
+        <p>
+          Actualmente contamos con más de 100.000 artículos disponibles y 31.700
+          m2 repartidos entre todas nuestras instalaciones, además de tres
+          <a
+            href="https://www.pccomponentes.com/tiendas"
+            title="Tiendas físicas de PcComponentes"
+            rel="noopener"
+            >tiendas físicas</a
+          >
+          en <span>Madrid</span>, <span>Barcelona</span> y
+          <span>Alhama de Murcia</span>.
+        </p>
+        <h2>Los expertos en tecnología más comprometidos contigo</h2>
+        <p>
+          Nuestros
+          <a
+            href="https://www.pccomponentes.com/compromisos"
+            title="Compromisos con nuestro cliente"
+            rel="noopener"
+            >compromisos</a
+          >
+          se centran en ser expertos en lo que vendemos y garantizar al cliente
+          todo lo que necesita:
+        </p>
+        <ul>
+          <li>
+            <span>Envíos gratuitos</span> a partir de 50€ siempre en
+            <span>24 horas*</span> (si excepcionalmente incumplimos la fecha de
+            entrega, te devolvemos los gastos de envío).
+          </li>
+          <li>
+            <span>Garantía</span> con la mejor solución para ti en
+            <span>24h</span>.
+          </li>
+          <li><span>Devoluciones gratuitas</span>.</li>
+          <li><span>Atención al cliente local y sin esperas</span>.</li>
+          <li>
+            Nos tomamos muy en serio las <span>opiniones</span> de nuestros
+            clientes, y puedes verlas siempre en nuestros artículos.
+          </li>
+        </ul>
+        <p>Bienvenido a PcComponentes.</p>
+      </div>
+      <nav class="flex container menu-pie">
+        <nav>
+          <h2>Por qué comprar</h2>
+          <ul class="flex container">
+            <li>
+              <a
+                href="https://www.pccomponentes.com/soporte/como-comprar-en-pccomponentes"
+                rel="noopener"
+                >Cómo comprar</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/soporte/formas-de-pago"
+                rel="noopener"
+                >Formas de pago</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/soporte/gastos-de-envio"
+                rel="noopener"
+                >Gastos de envío</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/cupones-descuento-y-codigos-promocionales"
+                rel="noopener"
+                >Cupones descuento</a
+              >
+            </li>
+            <li>
+              <a href="https://www.pccomponentes.com/soporte" rel="noopener"
+                >Preguntas frecuentes</a
+              >
+            </li>
+            <li>
+              <a href="https://www.pccomponentes.com/opiniones" rel="noopener"
+                >Opiniones de clientes</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/tarjetas-regalo"
+                rel="noopener"
+                >Tarjetas regalo</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <h2>Quiénes somos</h2>
+          <ul class="flex container">
+            <li>
+              <a
+                href="https://www.pccomponentes.com/quienes-somos"
+                rel="noopener"
+                >Quiénes somos</a
+              >
+            </li>
+            <li>
+              <a href="https://www.pccomponentes.com/compromisos" rel="noopener"
+                >Compromisos</a
+              >
+            </li>
+            <li>
+              <a href="https://www.pccomponentes.com/tiendas" rel="noopener"
+                >Nuestras tiendas</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/nuestras-marcas"
+                rel="noopener"
+                >Nuestras Marcas</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/condiciones-de-compra"
+                rel="noopener"
+                >Condiciones de compra</a
+              >
+            </li>
+            <li>
+              <a href="https://www.pccomponentes.com/afiliados" rel="noopener"
+                >Afiliados</a
+              >
+            </li>
+            <li>
+              <a href="https://www.pccomponentes.com/aviso-legal" rel="noopener"
+                >Aviso legal</a
+              >
+            </li>
+            <li>
+              <a href="https://www.pccomponentes.com/privacidad" rel="noopener"
+                >Privacidad</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <h2>Contactar</h2>
+          <ul class="flex container">
+            <li>
+              <a href="https://www.pccomponentes.com/soporte" rel="noopener"
+                >Centro de soporte</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/soporte/contactos"
+                rel="noopener"
+                >Contacto</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://pccomponentes.canaletico.app/#/login"
+                rel="noopener"
+                >Canal ético</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/soporte/devoluciones-y-garantias"
+                rel="noopener"
+                >Devoluciones y Garantías</a
+              >
+            </li>
+            <li>
+              <a href="https://www.pccomponentes.com/wiki" rel="noopener"
+                >Wiki PcComponentes</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/opina-y-gana"
+                rel="noopener"
+                >Opina y Gana</a
+              >
+            </li>
+            <li>
+              <a href="https://pcads.pccomponentes.com/" rel="noopener"
+                >Publicidad</a
+              >
+            </li>
+            <li>
+              <a href="https://jobs.pccomponentes.com/" rel="noopener"
+                >Trabaja con nosotros</a
+              >
+            </li>
+            <li>
+              <a href="https://www.pccomponentes.com/cookies" rel="noopener"
+                >Política de cookies</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <h2>Otros</h2>
+          <ul class="flex container">
+            <li>
+              <a href="https://www.pccomponentes.com/replay" rel="noopener"
+                >Replay</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/black-friday"
+                rel="noopener"
+                >Black Friday</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/cyber-monday"
+                rel="noopener"
+                >Cyber Monday</a
+              >
+            </li>
+            <li>
+              <a href="https://www.pccomponentes.com/pcdays" rel="noopener"
+                >PcDays</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/marketplace/"
+                rel="noopener"
+                >Marketplace</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/servicio-de-reparaciones"
+                rel="noopener"
+                >Servicio de reparaciones</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/concursos-pccomponentes"
+                rel="noopener"
+                >Concursos</a
+              >
+            </li>
+            <li>
+              <a href="https://soporteonline.pccomponentes.com/" rel="noopener"
+                >Cita asistencia técnica</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/blog/categoria-rsc"
+                rel="noopener"
+                >Responsabilidad Social</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <h2>Comunidad</h2>
+          <ul class="flex container">
+            <li class="blog before">
+              <a
+                href="https://www.pccomponentes.com/blog"
+                title="Abre nueva ventana"
+                target="_blank"
+                rel="noopener"
+                >Blog</a
+              >
+            </li>
+            <li class="instagram before">
+              <a
+                href="https://www.instagram.com/pccomponentes/"
+                title="Abre nueva ventana"
+                target="_blank"
+                rel="noopener"
+                >Instagram</a
+              >
+            </li>
+            <li class="twitter before">
+              <a
+                href="https://twitter.com/pccomponentes"
+                title="Abre nueva ventana"
+                target="_blank"
+                rel="noopener"
+                >Twitter</a
+              >
+            </li>
+            <li class="facebook before">
+              <a
+                href="https://www.facebook.com/pccomponentes"
+                title="Abre nueva ventana"
+                target="_blank"
+                rel="noopener"
+                >Facebook</a
+              >
+            </li>
+            <li class="telegram before">
+              <a
+                href="https://t.me/pccomponentesESP"
+                title="Abre nueva ventana"
+                target="_blank"
+                rel="noopener"
+                >Telegram</a
+              >
+            </li>
+            <li class="youtube before">
+              <a
+                href="https://www.youtube.com/user/PcComponentescom"
+                title="Abre nueva ventana"
+                target="_blank"
+                rel="noopener"
+                >Youtube</a
+              >
+            </li>
+            <li class="tiktok before">
+              <a
+                href="https://www.tiktok.com/@pccomponentes.com"
+                title="Abre nueva ventana"
+                target="_blank"
+                rel="noopener"
+                >TikTok</a
+              >
+            </li>
+            <li class="twitch before">
+              <a
+                href="https://www.twitch.tv/pccomponenteses"
+                title="Abre nueva ventana"
+                target="_blank"
+                rel="noopener"
+                >Twitch</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="flex container tarjeta-app">
+          <h2>PcComponentes en</h2>
+          <div class="flex container tarjeta">
+            <form action="#" method="post">
+              <fieldset>
+                <legend class="oculto">Idioma</legend>
+                <label class="oculto" for="pais">Seleccione un país</label>
+                <select name="pais" id="pais">
+                  <option value="espana" selected>España</option>
+                  <option value="portugal">Portugal</option>
+                  <option value="francia">Francia</option>
+                  <option value="italia">Italia</option>
+                </select>
+              </fieldset>
+            </form>
+            <div class="flex container">
+              <img
+                src="https://cdn.pccomponentes.com/img/footer/eAward19.png"
+                alt="E-awards"
+              />
+              <img
+                src="https://cdn.pccomponentes.com/img/footer/eCommerceAwards.png"
+                alt="E-commerce Awards España"
+              />
+            </div>
+            <div class="flex container tarjetas">
+              <img src="assets/images/maestro.png" alt="Maestro" />
+              <img src="assets/images/mastercard.png" alt="Mastercard" />
+              <img src="assets/images/visa.png" alt="Visa" />
+            </div>
+          </div>
+          <h2>Descarga nuestra App</h2>
+          <div class="flex container app">
+            <a
+              class="android"
+              href="http://app.app4less.es/app/pccomponentes?campaign=footer"
+              title="Descarga app Google Play. Abre nueva ventana"
+              target="_blank"
+              rel="noopener"
+              >Descarga app Google Play</a
+            >
+            <a
+              class="mac"
+              href="http://app.app4less.es/app/pccomponentes?campaign=footer"
+              title="Descarga app en App Store. Abre nueva ventana"
+              target="_blank"
+              rel="noopener"
+              >Descarga app en App Store</a
+            >
+            <a
+              href="http://app.app4less.es/app/pccomponentes?campaign=footer"
+              title="QR code download app. Abre nueva ventana"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="https://cdn.pccomponentes.com/img/repositorio/otros/qr-app-pcc-es.png"
+                alt="QR code download app"
+            /></a>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <p class="copy">
+          PC Componentes y Multimedia SLU CIF B73347494. AVDA Europa, Parcela
+          2-5 y 2-6. Polígono industrial Las Salinas, 30840, Alhama de Murcia,
+          Murcia. ESPAÑA.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

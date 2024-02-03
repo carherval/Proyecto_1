@@ -3,21 +3,614 @@
 
 /* Variables */
 :root {
-  --orange-color: #ff5f04;
-  --purple-color: #170453;
+  --orange-color: #cc4d02;
   --black-color: #000000;
   --white-color: #ffffff;
+  --grey-color: #f2f2f2;
+  --grey2-color: #808080;
+  --red-color: #ff0000;
+  --blue-color: #170453;
+  --black-border: solid 1px #000000;
+  --grey-border: solid 2px #f2f2f2;
   font-size: 12px;
 }
 
 /* Estilos iniciales generales */
 * {
   margin: 0;
+  border: none;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   color: var(--black-color);
-  background-color: var(--purple-color);
+  background-color: var(--white-color);
+  font-size: 1.2rem;
+}
+
+/* Estilos generales */
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3,
+#categorias,
+#buscador,
+#pais,
+option,
+.menu-cabecera a,
+.menu-categorias a,
+.mensaje-cabecera * {
+  font-size: 1.5rem;
+}
+
+.info-pie h2 {
+  font-size: 1.5rem;
+}
+
+.menu-pie h2 {
+  font-size: 1.2rem;
+}
+
+img {
+  width: 100%;
+}
+
+.oculto {
+  display: none;
+}
+
+/* Fondos */
+.cabecera,
+.menu-categorias > ul {
+  background-color: var(--white-color);
+}
+
+.menu-cabecera > li:hover,
+.menu-cabecera > li:hover a,
+.menu-categorias > ul > li:hover,
+.menu-categorias > ul > li:hover a,
+.replay,
+.menu-pie li:hover,
+.menu-pie li:hover a {
+  background-color: var(--grey-color);
+}
+
+.recomendamos {
+  background-color: var(--blue-color);
+}
+
+.trending {
+  background-color: var(--orange-color);
+}
+
+.info-recomendamos,
+.info-trending {
+  background-color: var(--white-color);
+}
+
+/* Negritas */
+.mensaje-cabecera span,
+.botonera div,
+.recomendamos,
+.trending,
+.precio,
+.expertos div,
+.categorias div,
+.cliente div,
+footer span {
+  font-weight: bold;
+}
+
+/* Paddings */
+.cabecera,
+.menu-categorias,
+.mensaje-cabecera,
+.banner,
+.botonera,
+.servicios,
+.replay {
+  padding: 0 10rem;
+}
+
+.cabecera > *,
+.mensaje-cabecera > * {
+  padding: 2rem;
+}
+
+.cabecera > a,
+.mensaje-cabecera > p {
+  padding-left: 0;
+}
+
+.cabecera > nav {
+  padding-right: 0;
+}
+
+.menu-cabecera > li {
+  padding: 1rem 0.5rem;
+}
+
+.menu-categorias > ul > li {
+  padding: 2rem;
+}
+
+section {
+  padding: 4rem 10rem;
+}
+
+section > h2 {
+  padding-bottom: 2rem;
+}
+
+footer > * {
+  padding: 2rem 10rem;
+}
+
+footer h2,
+footer p,
+footer li {
+  padding-bottom: 1rem;
+}
+
+/* Filos horizontales */
+.cabecera,
+.menu-categorias,
+footer > * {
+  border-bottom: var(--grey-border);
+}
+
+/* Bordes redondeados */
+.banner img,
+.botonera img,
+.expertos img,
+.categorias img,
+.marcas img,
+.cliente img,
+.blog li {
+  border-radius: 1.5rem;
+}
+
+/* Logo */
+.cabecera > a > img {
+  width: 11.5rem;
+}
+
+/* Formulario cabecera */
+.cabecera > form {
+  width: 50%;
+}
+
+fieldset.container {
+  gap: 0;
+}
+
+/* Desplegables */
+#categorias:hover,
+#categorias:focus,
+#pais:hover,
+#pais:focus {
+  outline: none;
+  border: var(--black-border);
+}
+
+#categorias,
+#pais {
+  cursor: pointer;
+}
+
+/* Buscador */
+.buscador:hover,
+.buscador:focus {
+  border: var(--black-border);
+}
+
+#buscador:hover,
+#buscador:focus {
+  outline: none;
+}
+
+.buscador:has(#buscador:focus) {
+  border: var(--black-border);
+}
+
+/* Elementos de formulario */
+#categorias,
+.buscador,
+#pais {
+  border: var(--grey-border);
+  padding: 1rem;
+  height: 4rem;
+}
+
+#categorias,
+.buscador,
+#buscador,
+#pais,
+#categorias > option,
+#pais > option {
+  color: var(--grey2-color);
+}
+
+.buscador {
+  width: 75%;
+}
+
+#buscador {
+  width: 100%;
+}
+
+/* Menú usuario */
+.cabecera > nav {
+  width: 35%;
+}
+
+/* Cabecera fija */
+.fix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.mensaje-cabecera {
+  margin-top: 15rem;
+}
+
+/* Iconos */
+.lupa {
+  width: 1.5rem;
+}
+
+.before > a::before,
+.recomendamos::before,
+.trending::before,
+.android::before,
+.mac::before {
+  display: inline-block;
+  background-size: 1.7rem 1.7rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  content: '';
+  padding-left: 1rem;
+  background-repeat: no-repeat;
+}
+
+.compromisos > a::before,
+.login > a::before,
+.carrito > a::before {
+  background-size: 1.5rem 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.compromisos > a::before {
+  background-image: url(assets/images/estrella.png);
+}
+
+.login > a::before {
+  background-image: url(assets/images/user.png);
+}
+
+.carrito > a::before {
+  background-image: url(assets/images/carrito.png);
+}
+
+.hamburguesa > a::before,
+.recomendamos::before,
+.trending::before {
+  background-size: 1.2rem 1.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.hamburguesa > a::before {
+  background-image: url(assets/images/menu.png);
+}
+
+.recomendamos::before,
+.trending::before {
+  background-image: url(assets/images/info.png);
+  padding-left: 0.5rem;
+  filter: invert(100%);
+}
+
+.android::before {
+  background-image: url(assets/images/android.png);
+}
+
+.mac::before {
+  background-image: url(assets/images/mac.png);
+}
+
+.blog > a::before {
+  background-image: url(assets/images/pccomp.png);
+}
+
+.instagram > a::before {
+  background-image: url(assets/images/instagram.png);
+}
+
+.twitter > a::before {
+  background-image: url(assets/images/twitter.png);
+}
+
+.facebook > a::before {
+  background-image: url(assets/images/facebook.png);
+}
+
+.telegram > a::before {
+  background-image: url(assets/images/telegram.png);
+}
+
+.youtube > a::before {
+  background-image: url(assets/images/youtube.png);
+}
+
+.tiktok > a::before {
+  background-image: url(assets/images/tiktok.png);
+}
+
+.twitch > a::before {
+  background-image: url(assets/images/twitch.png);
+}
+
+/* Botonera cabecera */
+.botonera {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.botonera li {
+  width: 15%;
+}
+
+.botonera div {
+  padding: 1.5rem;
+}
+
+/* Servicios */
+.servicios {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.servicios li {
+  width: 10%;
+}
+
+.servicios div {
+  padding: 1.5rem;
+}
+
+/* Banner reacondicionados */
+.replay {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Productos vendidos */
+.vendidos > li {
+  width: 15%;
+}
+
+.producto {
+  position: relative;
+}
+
+.recomendamos {
+  position: absolute;
+  bottom: 11rem;
+}
+
+.trending {
+  position: absolute;
+  bottom: 8rem;
+}
+
+.recomendamos,
+.trending {
+  padding: 0.5rem;
+  color: var(--white-color);
+  border-radius: 0.5rem;
+  gap: 0;
+}
+
+.precio {
+  font-size: 2rem;
+}
+
+.info-recomendamos,
+.info-trending {
+  position: absolute;
+  display: none;
+  top: 22.5rem;
+  left: 0;
+  border: var(--grey-border);
+  padding: 1rem;
+  width: 100%;
+  color: var(--grey2-color);
+  text-align: left;
+  z-index: 1;
+}
+
+.recomendamos:hover + .info-recomendamos,
+.trending:hover + .info-trending {
+  display: block;
+}
+
+/* Tecnología */
+.tecnologia > h2 {
+  padding-bottom: 1rem;
+}
+
+.tecnologia > p {
+  padding-bottom: 2rem;
+}
+
+.expertos {
+  padding-bottom: 2rem;
+}
+
+.expertos li {
+  width: 20%;
+}
+
+.expertos div {
+  padding: 1.5rem;
+}
+
+/* Categorías */
+.categorias {
+  padding-bottom: 2rem;
+}
+
+.categorias li {
+  width: 20%;
+}
+
+.categorias div {
+  padding: 1.5rem;
+}
+
+/* Carrusel marcas */
+.carrusel-marcas {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.carrusel-marcas li {
+  width: 15%;
+}
+
+/* Marcas */
+.marcas {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.marcas li {
+  width: 20%;
+}
+
+/* Cliente */
+.cliente {
+  padding-bottom: 2rem;
+}
+
+.cliente li {
+  width: 20%;
+}
+
+.cliente div {
+  padding: 1.5rem;
+}
+
+/* Blog */
+.blog {
+  padding-bottom: 2rem;
+}
+
+.blog li {
+  width: 35%;
+  overflow: hidden;
+}
+
+.blog a {
+  position: relative;
+}
+
+.blog div {
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  padding: 1rem 3rem;
+  width: 90%;
+  height: 5rem;
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+.blog img {
+  object-fit: cover;
+  height: 100%;
+  transition: transform 1s;
+}
+
+.blog img:hover,
+.blog div:hover + img {
+  transform: scale(1.1);
+}
+
+/* Texto pie */
+.info-pie a {
+  text-decoration: underline;
+}
+
+.info-pie a:hover {
+  color: var(--red-color);
+}
+
+.info-pie li {
+  list-style-type: inherit;
+}
+
+/* Menú pie */
+.menu-pie > * {
+  width: 15%;
+}
+
+.menu-pie h2,
+.menu-pie ul {
+  text-align: left;
+}
+
+.menu-pie h2 {
+  padding-left: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.menu-pie li {
+  padding: 1rem 0.5rem;
+}
+
+/* Tarjetas crédito */
+.tarjeta-app > * {
+  padding-left: 0.5rem;
+}
+
+.tarjeta form,
+.tarjeta form select {
+  width: 100%;
+}
+
+.tarjeta img {
+  width: 8.5rem;
+}
+
+.tarjetas img {
+  width: 4.5rem;
+}
+
+/* Descarga app */
+.app a:hover {
+  color: var(--red-color);
+}
+
+.app img {
+  width: 11rem;
+}
+
+/* Copyright */
+.copy {
+  text-align: center;
 }
 
 /* Estilos responsive iniciales */
@@ -25,14 +618,60 @@
   display: flex;
 }
 
-.grid {
-  display: grid;
-  justify-items: center;
-}
-
 .container {
   justify-content: center;
   align-content: center;
   align-items: center;
   text-align: center;
+  gap: 2rem;
+}
+
+/* Estilos responsive */
+.cabecera,
+.buscador,
+.menu-categorias > ul,
+.botonera,
+.expertos,
+.categorias,
+.carrusel-marcas,
+.marcas,
+.cliente,
+.blog {
+  justify-content: space-between;
+}
+
+.menu-cabecera {
+  justify-content: right;
+}
+
+.servicios,
+.menu-pie {
+  justify-content: space-around;
+}
+
+.botonera,
+.servicios,
+.expertos,
+.categorias,
+.cliente,
+.menu-pie {
+  align-items: baseline;
+}
+
+.producto,
+.menu-pie ul,
+.tarjeta-app,
+.tarjeta,
+.app {
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
+}
+
+.marcas {
+  flex-wrap: wrap;
+}
+
+.blog {
+  align-items: stretch;
 }
