@@ -288,7 +288,7 @@ footer > *,
 .categorias img,
 .marcas img,
 .cliente img,
-.blog li {
+.nuestro-blog article {
   border-radius: 1.5rem;
 }
 
@@ -579,22 +579,22 @@ fieldset.container {
 /* Productos vendidos */
 /* Dispositivos de pantalla pequeña */
 @media screen and (max-width: 374px) {
-  .vendidos > li {
+  .vendidos > article {
     width: 45%;
   }
 }
 
 /* Dispositivos de pantalla mediana */
 @media screen and (min-width: 375px) and (max-width: 767px) {
-  .vendidos > li {
+  .vendidos > article {
     width: 30%;
   }
 }
 
 /* Dispositivos de pantalla grande */
 @media screen and (min-width: 768px) {
-  .vendidos > li {
-    width: 15%;
+  .vendidos > article {
+    width: 18%;
   }
 }
 
@@ -607,19 +607,19 @@ fieldset.container {
   position: absolute;
 }
 
-/* Dispositivos de pantalla pequeña y mediana */
-@media screen and (max-width: 767px) {
+/* Dispositivos de pantalla pequeña */
+@media screen and (max-width: 374px) {
   .recomendamos {
-    bottom: 12rem;
+    bottom: 12.5rem;
   }
 
   .trending {
-    bottom: 9rem;
+    bottom: 9.5rem;
   }
 }
 
-/* Dispositivos de pantalla grande */
-@media screen and (min-width: 768px) {
+/* Dispositivos de pantalla mediana y grande */
+@media screen and (min-width: 375px) {
   .recomendamos {
     bottom: 11rem;
   }
@@ -837,33 +837,33 @@ fieldset.container {
 }
 
 /* Blog */
-.blog {
+.nuestro-blog {
   padding-bottom: 2rem;
 }
 
 /* Dispositivos de pantalla pequeña y mediana */
 @media screen and (max-width: 767px) {
-  .blog li {
+  .nuestro-blog article {
     width: 100%;
   }
 }
 
 /* Dispositivos de pantalla grande */
 @media screen and (min-width: 768px) {
-  .blog li {
+  .nuestro-blog article {
     width: 30%;
   }
 }
 
-.blog li {
+.nuestro-blog article {
   overflow: hidden;
 }
 
-.blog a {
+.nuestro-blog a {
   position: relative;
 }
 
-.blog div {
+.nuestro-blog div {
   position: absolute;
   left: 5%;
   bottom: 0;
@@ -876,26 +876,26 @@ fieldset.container {
 
 /* Dispositivos de pantalla pequeña */
 @media screen and (max-width: 374px) {
-  .blog div > h3 {
+  .nuestro-blog div > h3 {
     font-size: 1.1rem;
   }
 }
 
 /* Dispositivos de pantalla grande */
 @media screen and (min-width: 768px) {
-  .blog div > h3 {
+  .nuestro-blog div > h3 {
     font-size: 1.3rem;
   }
 }
 
-.blog img {
+.nuestro-blog img {
   object-fit: cover;
   height: 100%;
   transition: transform 1s;
 }
 
-.blog img:hover,
-.blog div:hover + img {
+.nuestro-blog img:hover,
+.nuestro-blog div:hover + img {
   transform: scale(1.1);
 }
 
@@ -1065,14 +1065,14 @@ fieldset.container {
 
 /* Dispositivos de pantalla pequeña y mediana */
 @media screen and (max-width: 767px) {
-  .blog {
+  .nuestro-blog {
     flex-direction: column;
   }
 }
 
 /* Dispositivos de pantalla grande */
 @media screen and (min-width: 768px) {
-  .blog {
+  .nuestro-blog {
     justify-content: space-between;
   }
 }
@@ -1099,6 +1099,7 @@ fieldset.container {
 
 .botonera,
 .servicios,
+.vendidos,
 .expertos,
 .categorias,
 .cliente,
@@ -1142,11 +1143,11 @@ fieldset.container {
 .categorias,
 .carrusel-marcas,
 .cliente,
-.blog,
+.nuestro-blog,
 .marcas {
   flex-wrap: wrap;
 }
 
-.blog {
+.nuestro-blog {
   align-items: stretch;
 }
